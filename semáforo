@@ -1,0 +1,43 @@
+// C++ code
+//
+void setup()
+{
+  pinMode(10, OUTPUT);//led amarelo1
+  pinMode(9, OUTPUT);//led vermelho1
+  pinMode(11, OUTPUT);//led verde1
+  pinMode(12, OUTPUT);//led vermelho2
+  pinMode(13, OUTPUT);//led verde2
+  pinMode(8, OUTPUT);//led amarelo2
+}
+
+void loop()
+{
+  digitalWrite(11, LOW);//led verde 
+  digitalWrite(9, HIGH);//led vermelho
+  digitalWrite(10, LOW);//led amarelo
+  digitalWrite(13, HIGH);//led verde2
+  digitalWrite(12, LOW);//led vermelho2
+  digitalWrite(8, LOW);//led amarelo2
+  delay(5000);
+  digitalWrite(10, LOW);//led amarelo
+  digitalWrite(9, HIGH);//led vermelho
+  digitalWrite(11, LOW);//led verde
+  digitalWrite(8, HIGH);//led amarelo2
+  digitalWrite(12, LOW);//led vermelho2
+  digitalWrite(13, LOW);//led verde2
+  delay(5000); 
+  digitalWrite(11, HIGH);//led verde 
+  digitalWrite(9, LOW);//led vermelho
+  digitalWrite(10, LOW);//led amarelo
+  digitalWrite(13, LOW);//led verde2
+  digitalWrite(12, HIGH);//led vermelho2
+  digitalWrite(8, LOW);//led amarelo2
+  delay(5000); 
+  digitalWrite(11, LOW);//led verde 
+  digitalWrite(9, LOW);//led vermelho
+  digitalWrite(10, HIGH);//led amarelo
+  digitalWrite(13, LOW);//led verde2
+  digitalWrite(12, HIGH);//led vermelho2
+  digitalWrite(8, LOW);//led amarelo2
+  delay(5000); 
+}
