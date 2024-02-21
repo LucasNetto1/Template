@@ -1,0 +1,102 @@
+const int buttonPin1 = 1;
+const int buttonPin2 = 2;
+const int buttonPin3 = 3;
+const int buttonPin4 = 4;
+const int buttonPin5 = 5;
+
+int buttonState1 = 0;
+int buttonState2 = 0;
+int buttonState3 = 0;
+int buttonState4 = 0;
+int buttonState5 = 0;
+  
+  void setup(){
+  pinMode(buttonPin1, INPUT);
+  pinMode(buttonPin2, INPUT);
+  pinMode(buttonPin3, INPUT);
+  pinMode(buttonPin4, INPUT);
+  pinMode(buttonPin5, INPUT);
+  pinMode(13, OUTPUT);//seta da frente1
+  pinMode(12, OUTPUT);//seta da frente1
+  pinMode(11, OUTPUT);//seta da frente2
+  pinMode(10, OUTPUT);//seta da frente2
+  pinMode(9, OUTPUT);//seta de trás1
+  pinMode(8, OUTPUT);//seta de trás1
+  pinMode(7, OUTPUT);//seta de trás2
+  pinMode(6, OUTPUT);//seta de trás2
+ 
+}
+void loop()
+{
+  buttonState1 = digitalRead(buttonPin1);
+  buttonState2 = digitalRead(buttonPin2);
+  buttonState3 = digitalRead(buttonPin3);
+  buttonState4 = digitalRead(buttonPin4);
+  buttonState5 = digitalRead(buttonPin5);
+
+    
+if (buttonState1 == HIGH){//SETA DA FRENTE
+  digitalWrite(13, HIGH);//seta da frente1
+  digitalWrite(12, HIGH);//seta da frente1
+  
+  delay(1000);
+  
+  digitalWrite(13, LOW);//seta da frente1
+  digitalWrite(12, LOW);//seta da frente1
+  
+  delay(1000);
+  
+}
+
+if (buttonState2 == HIGH){//SETA DE TRÁS
+  digitalWrite(11, HIGH);//seta de trás
+  digitalWrite(10, HIGH);//seta de trás
+  delay(1000);
+  digitalWrite(11, LOW);//seta de trás
+  digitalWrite(10, LOW);//seta de trás
+  delay(1000);
+}
+
+  
+  if (buttonState3 == HIGH){//SETA DA FRENTE2
+  digitalWrite(9, HIGH);//seta da frente2
+  digitalWrite(8, HIGH);//seta da frente2
+  delay(1000);
+  digitalWrite(9, LOW);//seta da frente2
+  digitalWrite(8, LOW);//seta da frente2
+  delay(1000);
+  }
+
+   if (buttonState4 == HIGH){//SETA DE TRÁS2
+  digitalWrite(7, HIGH);//seta de trás2
+  digitalWrite(6, HIGH);//seta de trás2
+  delay(1000);
+  digitalWrite(7, LOW);//seta de trás2
+  digitalWrite(6, LOW);//seta de trás2
+  delay(1000);
+   }
+
+  if (buttonState5 == HIGH){//PISCA ALERTA
+ 
+  digitalWrite(13, HIGH);//seta da frente1
+  digitalWrite(12, HIGH);//seta da frente1
+  digitalWrite(11, HIGH);//seta de trás
+  digitalWrite(10, HIGH);//seta de trás
+  digitalWrite(9, HIGH);//seta da frente2
+  digitalWrite(8, HIGH);//seta da frente2
+  digitalWrite(7, HIGH);//seta de trás2
+  digitalWrite(6, HIGH);//seta de trás2
+  
+  delay(1000);
+    
+  digitalWrite(13, LOW);//seta da frente1
+  digitalWrite(12, LOW);//seta da frente1
+  digitalWrite(11, LOW);//seta de trás
+  digitalWrite(10, LOW);//seta de trás
+  digitalWrite(9, LOW);//seta da frente2
+  digitalWrite(8, LOW);//seta da frente2
+  digitalWrite(7, LOW);//seta de trás2
+  digitalWrite(6, LOW);//seta de trás2
+  
+    delay(1000);
+  }}
