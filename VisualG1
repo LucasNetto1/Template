@@ -15,7 +15,7 @@ Inicio
    LEIA(nome)
    ESCREVAL("Digite seu sobre nome: ")
    LEIA(sobrenome)
-   ESCREVAL("---------------------------------------------- ")
+   ESCREVAL("---------------------LOADING------------------------- ")
    ESCREVAL("Seu nome é ", nome, " seu sobrenome é ",sobrenome)
    ESCREVAL("Então seu nome completo é ",nome, " ",sobrenome)
 
