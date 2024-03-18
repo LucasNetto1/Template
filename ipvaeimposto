@@ -1,0 +1,76 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/03/2024
+Var
+veiculo: inteiro
+ipva: real
+valor: real
+anoatual: inteiro
+anofabricacao: inteiro
+idadecarro: inteiro
+
+Inicio
+ESCREVAL ("Qual o valor do seu veículo")
+LEIA (valor)
+ESCREVAL ("Qual o ano de fabricação do seu veículo?")
+LEIA (anofabricacao)
+ESCREVAL ("Qual o ano atual?")
+LEIA (anoatual)
+idadecarro <- anoatual - anofabri
+
+
+
+ESCREVAL ("Qual o modelo do seu veículo?")
+ESCREVAL ("1- Carro flex")
+ESCREVAL ("2- Carro elétrico")
+ESCREVAL ("3- Carro gnv")
+ESCREVAL ("4- Moto")
+LEIA (veiculo)
+
+ESCOLHA veiculo
+CASO 1
+SE (idadecarro < 20) ENTAO
+ipva <- valor * 0.04
+SENAO
+ipva <- 0
+FIMSE
+ESCREVAL ("O valor do ipva do seu veículo é R$", ipva)
+
+
+CASO 2
+SE (idadecarro < 20) ENTAO
+ipva <- valor * 0.05
+SENAO
+ipva <- 0
+FIMSE
+ESCREVAL ("O valor do ipva do seu veículo é R$", ipva)
+
+
+CASO 3
+SE (idadecarro < 20) ENTAO
+ipva <- valor * 0.015
+SENAO
+ipva <- 0
+FIMSE
+ESCREVAL ("O valor do ipva do seu veículo é R$", ipva)
+
+
+CASO 4
+SE (idadecarro < 20) ENTAO
+ipva <- valor * 0.02
+SENAO
+ipva <- 0
+FIMSE
+ESCREVAL ("O valor do ipva do seu veículo é R$", ipva)
+
+
+OUTROCASO
+ESCREVAL("digite um numero válido")
+
+FIMESCOLHA
+
+
+Fimalgoritmo
