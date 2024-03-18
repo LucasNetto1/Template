@@ -1,0 +1,32 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/03/2024
+Var
+// Seção de Declarações das variáveis 
+x: inteiro
+continuar: caractere
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+continuar <- "S"
+x <- 1
+  ENQUANTO continuar = "S" FACA
+      ESCREVA(x)
+      
+      SE (x % 2 = 0) ENTAO
+         ESCREVAL(" - PAR")
+      SENAO
+         ESCREVAL(" - ÍMPAR")
+      FIMSE
+      ESCREVAL("DESEJA CONTINUAR ? [S/N]")
+      LEIA(continuar)
+      ESCREVAL(" ")
+      SE continuar = "S" ENTAO
+         x <- x + 1
+      FIMSE
+  FIMENQUANTO
+
+Fimalgoritmo
