@@ -1,0 +1,62 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/03/2024
+Var
+// Seção de Declarações das variáveis 
+x: inteiro
+continuar: caractere
+sexo: inteiro
+totalf: inteiro
+totalm: inteiro
+vezesm: inteiro
+vezesf: inteiro
+idade: inteiro
+nome: caractere
+total: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+
+x <- 0
+
+   ENQUANTO idade <> 999 FACA
+   ESCREVAL("Digite sua idade ou 999 p/ finalizar")
+   leia(idade)
+
+       Se (idade <> 999) então
+
+       
+
+           ESCREVAL("Qual o seu gênero")
+           ESCREVAL("1 - feminino")
+           ESCREVAL("2 - masculino")
+           leia(sexo)
+           
+       SE (idade > x) entao
+       x <- idade
+       fimse
+           se (sexo < 2) entao
+           vezesf <- vezesf + 1
+           totalf <- totalf + idade
+              senão
+              vezesm <- vezesm + 1
+              totalm <- totalm + idade
+         
+                 FIMSE
+               FIMSE
+total <- vezesf + vezesm
+
+ se (idade = 999) entao
+ESCREVAL("A soma das idades masculinas é ", totalm)
+ESCREVAL("Foram digitadas ", vezesf," idades femininas")
+ESCREVAL("Foram digitadas ", vezesm," idades masculinas")
+ESCREVAL("A soma das idades femininas é ",totalf)
+ESCREVAL("A maior idade foi ", x, " anos")
+ESCREVAL("O número de idades digitadas foi ", total)
+
+fimse
+FIMENQUANTO
+
+FIMALGORITMO
