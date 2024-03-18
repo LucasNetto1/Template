@@ -19,7 +19,7 @@ ESCREVAL ("Qual o ano de fabricação do seu veículo?")
 LEIA (anofabricacao)
 ESCREVAL ("Qual o ano atual?")
 LEIA (anoatual)
-idadecarro <- anoatual - anofabri
+idadecarro <- anoatual - anofabricacao
 
 
 
