@@ -1,0 +1,46 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/03/2024
+Var
+// Seção de Declarações das variáveis 
+idade: inteiro
+nome: caractere
+sexo: inteiro
+x: inteiro
+totalf: inteiro
+totalm: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+PARA x de 1 ate 6 faca
+  ESCREVAL("Selecione seu sexo")
+  ESCREVAL("1 - Para feminino")
+  ESCREVAL("2 - Para masculino")
+  LEIA(sexo)
+  
+  SE(sexo > 1) ENTAO
+    ESCREVAL(x,")Qual o seu nome: ")
+    LEIA(nome)
+    ESCREVA("Qual sua idade: ")
+    LEIA(idade)
+    ESCREVAL("----------------------------------LOADING------------------")
+    totalm <- totalm + idade
+  SENAO
+    ESCREVAL(x,")Qual o seu nome: ")
+    LEIA(nome)
+    ESCREVA("Qual sua idade: ")
+    LEIA(idade)
+    ESCREVAL("----------------------------------LOADING------------------")
+    totalf <- totalf + idade
+  FIMSE
+  
+FIMPARA
+
+ESCREVAL("Total das idades masculinas foi: ", totalm)
+ESCREVAL("Total das idades masculinas foi: ", totalf)
+
+
+Fimalgoritmo
