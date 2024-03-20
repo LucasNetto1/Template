@@ -1,10 +1,3 @@
-Algoritmo "CalculadoraHexadecimal"
-// Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Antonio Carlos Nicolodi 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 20/03/2024
-Var
 // Seção de Declarações das variáveis 
 decimal: inteiro
 resto: inteiro
@@ -19,6 +12,8 @@ Inicio
 
 Escreval("digite um número decimal: ")
 leia(decimal)
+
+Se(decimal < 999) entao
 
 resultado <- decimal div 16
 resto <- decimal mod 16
@@ -70,7 +65,7 @@ resto3 <- resultado2 mod 16
                                          se (resto2 = 13) entao
                                          escreva("D")
                                          senao
-                                              se (resto = 14) entao
+                                              se (resto2 = 14) entao
                                               escreva("E")
                                               senao
                                                 escreva("F")
@@ -112,7 +107,4 @@ resto3 <- resultado2 mod 16
 
 
 
-
-
-
-Fimalgoritmo
+Fimse
