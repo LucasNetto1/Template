@@ -1,0 +1,118 @@
+Algoritmo "CalculadoraHexadecimal"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 20/03/2024
+Var
+// Seção de Declarações das variáveis 
+decimal: inteiro
+resto: inteiro
+resto2: inteiro
+resto3:inteiro
+resultado: inteiro
+resultado2: inteiro
+
+
+Inicio
+
+
+Escreval("digite um número decimal: ")
+leia(decimal)
+
+resultado <- decimal div 16
+resto <- decimal mod 16
+
+resultado2 <- resultado div 16
+resto2 <- resultado mod 16
+
+resto3 <- resultado2 mod 16
+
+                     se (resto3 < 10) entao
+                      escreva(resto3)
+                     senao
+                          se (resto3 = 10) entao
+                          escreva("A")
+                          senao
+                               se(resto3 = 11) entao
+                               escreva("B")
+                               senao
+                                    se (resto3 = 12) entao
+                                    escreva("C")
+                                    senao
+                                         se (resto3 = 13) entao
+                                         escreva("D")
+                                         senao
+                                              se (resto3 = 14) entao
+                                              escreva("E")
+                                              senao
+                                                   escreva("F")
+
+                                                   fimse
+                                              fimse
+                                          fimse
+                                      fimse
+                                 fimse
+                            fimse
+
+                     se (resto2 < 10) entao
+                     escreva(resto2)
+                     senao
+                          se (resto2 = 10) entao
+                          escreva("A")
+                          senao
+                               se(resto2 = 11) entao
+                               escreva("B")
+                               senao
+                                    se (resto2 = 12) entao
+                                    escreva("C")
+                                    senao
+                                         se (resto2 = 13) entao
+                                         escreva("D")
+                                         senao
+                                              se (resto = 14) entao
+                                              escreva("E")
+                                              senao
+                                                escreva("F")
+
+                                                   fimse
+                                              fimse
+                                          fimse
+                                      fimse
+                                 fimse
+                            fimse
+                                              
+                     se (resto < 10) entao
+                     escreva(resto)
+                     senao
+                          se (resto = 10) entao
+                          escreva("A")
+                          senao
+                               se(resto = 11) entao
+                               escreva("B")
+                               senao
+                                    se (resto = 12) entao
+                                    escreva("C")
+                                    senao
+                                         se (resto = 13) entao
+                                         escreva("D")
+                                         senao
+                                              se (resto = 14) entao
+                                              escreva("E")
+                                              senao
+                                                   escreva("F")
+
+                                                   fimse
+                                              fimse
+                                          fimse
+                                      fimse
+                                 fimse
+                            fimse
+
+
+
+
+
+
+
+Fimalgoritmo
