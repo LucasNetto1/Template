@@ -1,0 +1,69 @@
+Algoritmo "semnome"
+
+Var
+
+   vetor_impares: vetor [1..10] de inteiro
+   indice_impar:inteiro
+
+   vetor_pares: vetor [1..10] de inteiro
+   indice_par:inteiro
+
+   qtd:inteiro
+   numero: inteiro
+   x: inteiro
+   exibir: caractere
+
+Inicio
+
+   indice_par <- 0
+   indice_impar <- 0
+
+   escreva("Quantos números?")
+   leia(qtd)
+
+   para x de 1 ate qtd faca
+      escreva("Qual o número?")
+      leia(numero)
+
+      se (numero mod 2 = 0) entao
+         indice_par <- indice_par + 1
+         vetor_pares[indice_par] <- numero
+      senao
+         indice_impar <- indice_impar + 1
+         vetor_impares[indice_impar] <- numero
+      fimse
+
+   fimpara
+
+   ESCREVAL("Como você deseja exibir")
+   ESCREVAL("1- Pares")
+   ESCREVAL("2- ímpar")
+   ESCREVAL("3- Ímpar/invertido")
+   ESCREVAL("4- Par/invertido")
+   LEIA(exibir)
+
+   Se (exibir = "1") entao
+      PARA x DE 1 ATÉ indice_par FACA
+         ESCREVAL(x, ": ", vetor_pares[x])
+      FIMPARA
+   fimse
+
+   se (exibir = "2") entao
+      PARA x DE 1 ATÉ indice_impar FACA
+         ESCREVAL(x, ": ", vetor_impares[x])
+      FIMPARA
+   fimse
+
+   se(exibir = "3") entao
+      PARA x DE indice_impar ATÉ 1 PASSO -1 FACA
+         ESCREVAL(x, ": ", vetor_impares[x])
+      FIMPARA
+   fimse
+
+   se(exibir = "4") entao
+      PARA x DE indice_par ATÉ 1 PASSO -1 FACA
+         ESCREVAL(x, ": ", vetor_pares[x])
+      FIMPARA
+   fimse
+
+Fimalgoritmo
