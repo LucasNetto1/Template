@@ -1,0 +1,35 @@
+// C++ code
+//
+
+int semaforo[3];
+
+void setup()
+{
+semaforo[0] = 13;//vermelho
+semaforo[1] = 12;//amarelo
+semaforo[2] = 11;//verde
+
+pinMode(semaforo[0], OUTPUT);
+pinMode(semaforo[1], OUTPUT);
+pinMode(semaforo[2], OUTPUT);
+ 
+ 
+}
+
+void loop()
+{
+digitalWrite(semaforo[0],LOW);
+digitalWrite(semaforo[1],HIGH);
+digitalWrite(semaforo[2],LOW);
+delay(1000);
+  
+digitalWrite(semaforo[0],HIGH);
+digitalWrite(semaforo[1],LOW);
+digitalWrite(semaforo[2],LOW);
+delay(2000);
+  
+digitalWrite(semaforo[0],LOW);
+digitalWrite(semaforo[1],LOW);
+digitalWrite(semaforo[2],HIGH);
+delay(2000);
+}
