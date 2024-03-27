@@ -1,0 +1,69 @@
+// C++ code
+//
+
+int semaforo[3];
+int pedestre[2];
+
+void setup()
+{
+semaforo[0] = 13;//vermelho
+semaforo[1] = 12;//amarelo
+semaforo[2] = 11;//verde
+pedestre[0] = 10;//vermelho
+pedestre[1] = 9;//verde
+
+pinMode(semaforo[0], OUTPUT);
+pinMode(semaforo[1], OUTPUT);
+pinMode(semaforo[2], OUTPUT);
+pinMode(pedestre[0], OUTPUT);
+pinMode(pedestre[1], OUTPUT); 
+ 
+}
+
+void loop()
+{
+digitalWrite(semaforo[0],LOW);//vermelho
+digitalWrite(semaforo[1],HIGH);//amarelo
+digitalWrite(semaforo[2],LOW);//verde
+digitalWrite(pedestre[0],HIGH);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+delay(2000);
+  
+  
+digitalWrite(semaforo[0],HIGH);//vermelho
+digitalWrite(semaforo[1],LOW);//amarelo
+digitalWrite(semaforo[2],LOW);//verde
+digitalWrite(pedestre[0],LOW);//vermelho
+digitalWrite(pedestre[1],HIGH);//verde
+delay(2000);
+
+digitalWrite(semaforo[0],HIGH);//vermelho
+digitalWrite(pedestre[0],LOW);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+delay(1000);
+  
+digitalWrite(semaforo[0],HIGH);//vermelho
+digitalWrite(pedestre[0],HIGH);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+delay(1000);
+  
+digitalWrite(semaforo[0],HIGH);//vermelho
+digitalWrite(pedestre[0],LOW);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+delay(1000);
+
+  
+digitalWrite(semaforo[0],HIGH);//vermelho
+digitalWrite(pedestre[0],HIGH);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+delay(1000);
+  
+digitalWrite(semaforo[0],LOW);//vermelho
+digitalWrite(semaforo[1],LOW);//amarelo
+digitalWrite(semaforo[2],HIGH);//verde
+digitalWrite(pedestre[0],HIGH);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+delay(2000);
+ 
+
+}
