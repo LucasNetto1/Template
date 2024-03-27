@@ -1,0 +1,230 @@
+// C++ code
+//
+
+int semaforo[6];
+int pedestre[4];
+
+void setup()
+{
+//1  
+semaforo[0] = 13;//vermelho
+semaforo[1] = 12;//amarelo
+semaforo[2] = 11;//verde
+//2
+semaforo[3] = 8;//vermelho 2
+semaforo[4] = 7;//amarelo 2
+semaforo[5] = 6;//verde 2
+//1
+pedestre[0] = 10;//vermelho Pede
+pedestre[1] = 9;//verde Pede
+//2  
+pedestre[2] = 5;//vermelho Pede 2
+pedestre[3] = 4;//verde Pede 2
+
+pinMode(semaforo[0], OUTPUT);
+pinMode(semaforo[1], OUTPUT);
+pinMode(semaforo[2], OUTPUT);
+pinMode(pedestre[0], OUTPUT);
+pinMode(pedestre[1], OUTPUT);
+pinMode(semaforo[3], OUTPUT);
+pinMode(semaforo[4], OUTPUT);
+pinMode(semaforo[5], OUTPUT);
+pinMode(pedestre[2], OUTPUT);
+pinMode(pedestre[3], OUTPUT);
+
+ 
+}
+
+void loop()
+{
+//1
+digitalWrite(semaforo[0],LOW);//vermelho
+digitalWrite(semaforo[1],HIGH);//amarelo
+digitalWrite(semaforo[2],LOW);//verde
+digitalWrite(pedestre[0],HIGH);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+//2
+digitalWrite(semaforo[3],HIGH);//vermelho
+digitalWrite(semaforo[4],LOW);//amarelo
+digitalWrite(semaforo[5],LOW);//verde
+digitalWrite(pedestre[2],LOW);//vermelho
+digitalWrite(pedestre[3],HIGH);//verde
+delay(2000);
+  
+//1
+digitalWrite(semaforo[0],LOW);//vermelho
+digitalWrite(semaforo[1],HIGH);//amarelo
+digitalWrite(semaforo[2],LOW);//verde
+digitalWrite(pedestre[0],HIGH);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+//2
+digitalWrite(semaforo[3],HIGH);//vermelho
+digitalWrite(semaforo[4],LOW);//amarelo
+digitalWrite(semaforo[5],LOW);//verde
+digitalWrite(pedestre[2],LOW);//vermelho
+digitalWrite(pedestre[3],LOW);//verde
+delay(500);
+
+//1
+digitalWrite(semaforo[0],LOW);//vermelho
+digitalWrite(semaforo[1],HIGH);//amarelo
+digitalWrite(semaforo[2],LOW);//verde
+digitalWrite(pedestre[0],HIGH);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+//2
+digitalWrite(semaforo[3],HIGH);//vermelho
+digitalWrite(semaforo[4],LOW);//amarelo
+digitalWrite(semaforo[5],LOW);//verde
+digitalWrite(pedestre[2],LOW);//vermelho
+digitalWrite(pedestre[3],HIGH);//verde
+delay(500);
+
+//1
+digitalWrite(semaforo[0],LOW);//vermelho
+digitalWrite(semaforo[1],HIGH);//amarelo
+digitalWrite(semaforo[2],LOW);//verde
+digitalWrite(pedestre[0],HIGH);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+//2
+digitalWrite(semaforo[3],HIGH);//vermelho
+digitalWrite(semaforo[4],LOW);//amarelo
+digitalWrite(semaforo[5],LOW);//verde
+digitalWrite(pedestre[2],LOW);//vermelho
+digitalWrite(pedestre[3],HIGH);//verde
+delay(500);
+ 
+//1
+digitalWrite(semaforo[0],LOW);//vermelho
+digitalWrite(semaforo[1],HIGH);//amarelo
+digitalWrite(semaforo[2],LOW);//verde
+digitalWrite(pedestre[0],HIGH);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+//2
+digitalWrite(semaforo[3],HIGH);//vermelho
+digitalWrite(semaforo[4],LOW);//amarelo
+digitalWrite(semaforo[5],LOW);//verde
+digitalWrite(pedestre[2],LOW);//vermelho
+digitalWrite(pedestre[3],LOW);//verde
+delay(500);
+  
+//1  
+digitalWrite(semaforo[0],HIGH);//vermelho
+digitalWrite(semaforo[1],LOW);//amarelo
+digitalWrite(semaforo[2],LOW);//verde
+digitalWrite(pedestre[0],LOW);//vermelho
+digitalWrite(pedestre[1],HIGH);//verde
+//2
+digitalWrite(semaforo[3],LOW);//vermelho
+digitalWrite(semaforo[4],LOW);//amarelo
+digitalWrite(semaforo[5],HIGH);//verde
+digitalWrite(pedestre[2],HIGH);//vermelho
+digitalWrite(pedestre[3],LOW);//verde
+delay(2000);
+
+//1
+digitalWrite(semaforo[0],HIGH);//vermelho
+digitalWrite(pedestre[0],LOW);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+//2
+digitalWrite(semaforo[3],LOW);//vermelho
+digitalWrite(semaforo[4],HIGH);//amarelo
+digitalWrite(semaforo[5],LOW);//verde
+digitalWrite(pedestre[2],HIGH);//vermelho
+digitalWrite(pedestre[3],LOW);//verde
+delay(1000);
+
+//1 
+digitalWrite(semaforo[0],HIGH);//vermelho
+digitalWrite(pedestre[0],HIGH);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+//2
+digitalWrite(semaforo[3],LOW);//vermelho
+digitalWrite(semaforo[4],HIGH);//amarelo
+digitalWrite(semaforo[5],LOW);//verde
+digitalWrite(pedestre[2],HIGH);//vermelho
+digitalWrite(pedestre[3],LOW);//verde
+delay(1000);
+
+//1
+digitalWrite(semaforo[0],HIGH);//vermelho
+digitalWrite(pedestre[0],LOW);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+//2
+digitalWrite(semaforo[3],LOW);//vermelho
+digitalWrite(semaforo[4],HIGH);//amarelo
+digitalWrite(semaforo[5],LOW);//verde
+digitalWrite(pedestre[2],HIGH);//vermelho
+digitalWrite(pedestre[3],LOW);//verde
+delay(1000);
+
+//1 
+digitalWrite(semaforo[0],HIGH);//vermelho
+digitalWrite(pedestre[0],HIGH);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+//2
+digitalWrite(semaforo[3],LOW);//vermelho
+digitalWrite(semaforo[4],HIGH);//amarelo
+digitalWrite(semaforo[5],LOW);//verde
+digitalWrite(pedestre[2],HIGH);//vermelho
+digitalWrite(pedestre[3],LOW);//verde
+delay(1000);
+  
+//1
+digitalWrite(semaforo[0],LOW);//vermelho
+digitalWrite(semaforo[1],LOW);//amarelo
+digitalWrite(semaforo[2],HIGH);//verde
+digitalWrite(pedestre[0],HIGH);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+//2
+digitalWrite(semaforo[3],HIGH);//vermelho
+digitalWrite(semaforo[4],LOW);//amarelo
+digitalWrite(semaforo[5],LOW);//verde
+digitalWrite(pedestre[2],LOW);//vermelho
+digitalWrite(pedestre[3],HIGH);//verde
+delay(3000);
+
+//1
+digitalWrite(semaforo[0],LOW);//vermelho
+digitalWrite(semaforo[1],LOW);//amarelo
+digitalWrite(semaforo[2],HIGH);//verde
+digitalWrite(pedestre[0],HIGH);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+//2
+digitalWrite(semaforo[3],HIGH);//vermelho
+digitalWrite(semaforo[4],LOW);//amarelo
+digitalWrite(semaforo[5],LOW);//verde
+digitalWrite(pedestre[2],LOW);//vermelho
+digitalWrite(pedestre[3],LOW);//verde
+delay(500);
+
+//1
+digitalWrite(semaforo[0],LOW);//vermelho
+digitalWrite(semaforo[1],LOW);//amarelo
+digitalWrite(semaforo[2],HIGH);//verde
+digitalWrite(pedestre[0],HIGH);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+//2
+digitalWrite(semaforo[3],HIGH);//vermelho
+digitalWrite(semaforo[4],LOW);//amarelo
+digitalWrite(semaforo[5],LOW);//verde
+digitalWrite(pedestre[2],LOW);//vermelho
+digitalWrite(pedestre[3],HIGH);//verde
+delay(500);
+
+  
+//1
+digitalWrite(semaforo[0],LOW);//vermelho
+digitalWrite(semaforo[1],LOW);//amarelo
+digitalWrite(semaforo[2],HIGH);//verde
+digitalWrite(pedestre[0],HIGH);//vermelho
+digitalWrite(pedestre[1],LOW);//verde
+//2
+digitalWrite(semaforo[3],HIGH);//vermelho
+digitalWrite(semaforo[4],LOW);//amarelo
+digitalWrite(semaforo[5],LOW);//verde
+digitalWrite(pedestre[2],LOW);//vermelho
+digitalWrite(pedestre[3],LOW);//verde
+delay(500);
+ 
+
+}
