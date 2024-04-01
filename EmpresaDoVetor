@@ -1,0 +1,43 @@
+Algoritmo "semnome"
+
+
+
+Var
+
+   funcionarios:vetor[1..100] de caractere
+   acompanhante:vetor[1..100] de caractere
+   idadesf:vetor[1..100] de inteiro
+   idadesa:vetor[1..100] de inteiro
+   convidados: inteiro
+   resposta: inteiro
+   x,y: inteiro
+   final:inteiro
+
+Inicio
+
+   ESCREVAL("Qual o total de convidados: ")
+   leia(convidados)
+
+
+   Para x de 1 ate convidados faca
+      Escreval("Qual o nome do funcionário: ")
+      Leia(funcionarios[x])
+      Escreval("Qual a idade do funcionário: ")
+      leia(idadesf[x])
+      Escreval("Você vai levar acompanhantes? 1-S 2-N")
+      leia(resposta)
+      se (resposta = 1) entao
+         Escreval("Qual o nome do acompanhado: ")
+         leia(acompanhante[x])
+         EScreval("Qual a idade do acompanhante: ")
+         leia(idadesa[x])
+      fimse
+   Fimpara
+
+Escreval("Digite um número de 1 até ",convidados," para achar algum funcionário")
+leia(resposta)
+
+Escreval("funcionário: ",funcionarios[resposta],"/ idade do funcionário: ",idadesf[resposta])
+Escreval("funcionário: ",acompanhante[resposta],"/ idade do funcionário: ",idadesa[resposta])
+
+Fimalgoritmo
