@@ -9,7 +9,7 @@ Var
    idadesf:vetor[1..100] de inteiro
    idadesa:vetor[1..100] de inteiro
    convidados: inteiro
-   resposta: inteiro
+   resposta: caractere
    x,y: inteiro
    final:inteiro
 
@@ -24,20 +24,21 @@ Inicio
       Leia(funcionarios[x])
       Escreval("Qual a idade do funcionário: ")
       leia(idadesf[x])
-      Escreval("Você vai levar acompanhantes? 1-S 2-N")
+      Escreval("Você vai levar acompanhantes? S/N")
       leia(resposta)
-      se (resposta = 1) entao
+      se (resposta = "S" ) entao
          Escreval("Qual o nome do acompanhante: ")
          leia(acompanhante[x])
          EScreval("Qual a idade do acompanhante: ")
          leia(idadesa[x])
       fimse
    Fimpara
+LIMPATELA
 
 Escreval("Digite um número de 1 até ",convidados," para achar algum funcionário")
-leia(resposta)
+leia(final)
 
-Escreval("funcionário: ",funcionarios[resposta],"/ idade do funcionário: ",idadesf[resposta])
-Escreval("funcionário: ",acompanhante[resposta],"/ idade do funcionário: ",idadesa[resposta])
+Escreval("funcionário: ",funcionarios[final],"/ idade do funcionário: ",idadesf[final])
+Escreval("funcionário: ",acompanhante[final],"/ idade do funcionário: ",idadesa[final])
 
 Fimalgoritmo
