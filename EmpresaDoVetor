@@ -27,7 +27,7 @@ Inicio
       Escreval("Você vai levar acompanhantes? 1-S 2-N")
       leia(resposta)
       se (resposta = 1) entao
-         Escreval("Qual o nome do acompanhado: ")
+         Escreval("Qual o nome do acompanhante: ")
          leia(acompanhante[x])
          EScreval("Qual a idade do acompanhante: ")
          leia(idadesa[x])
