@@ -1,0 +1,62 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 01/04/2024
+Var
+// Seção de Declarações das variáveis 
+selecao:vetor[1..5] de caractere
+gol:vetor[1..5,1..2] de inteiro
+ponto:vetor[1..5] de inteiro
+x: inteiro
+
+
+Inicio
+
+//SELEÇÃO
+selecao[1] <- "Brasil"
+selecao[2] <- "Argentina"
+selecao[3] <- "Alemanha"
+selecao[4] <- "Inglaterra"
+selecao[5] <- "Japão"
+
+//PONTOS
+ponto [1] <- 9
+ponto [2] <- 9
+ponto [3] <- 7
+ponto [4] <- 5
+ponto [5] <- 0
+
+//GOL FEITO
+gol [1,1] <- 10
+gol [2,1] <- 15
+gol [3,1] <- 7
+gol [4,1] <- 8
+gol [5,1] <- 5
+
+//GOL SOFRIDO
+gol [1,2] <- 2
+gol [2,2] <- 8
+gol [3,2] <- 1
+gol [4,2] <- 10
+gol [5,2] <- 11
+
+
+ESCREVAL("SELECIONE UMA SELEÇÃO")
+ESCREVAL("1) BRASIL")
+ESCREVAL("2) ARGENTINA")
+ESCREVAL("3) ALEMANHA")
+ESCREVAL("4) INGLATERRA")
+ESCREVAL("5) JAPÃO")
+ESCREVAL("")
+LEIA(x)
+ESCREVAL("")
+Escreval(selecao[x])
+Escreval("gol feito: ",gol[x,1])
+Escreval("gol sofrido: ",gol[x,2])
+Escreval("Pontos: ",ponto[x])
+Escreval("Saldo de gols: ", gol[x,1] - gol[x,2])
+
+
+Fimalgoritmo
