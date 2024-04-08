@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $idade = prompt("Qual é a sua idade?")
+        $sexo = prompt("Qual o seu sexo? [M] MASCULINO [F] FEMININO")
+
+        
+        if (($sexo == "m") ||($sexo == "M")) {
+            if ($idade < 18){
+                alert("Menino")
+        } else {
+                alert("Homem")
+        }}
+
+        if (($sexo == "f") ||($sexo == "F")) {
+            if ($idade < 18){
+                alert("Menina")
+        } else {
+                alert("Mulher")
+        }}
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
