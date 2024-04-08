@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body bgcolor="#ffe6e6">
     <center>
         <font color='red' size='7'>
             Tabelas - Parte 1
@@ -17,8 +17,8 @@
 
 
 
-        <table border="7" width="600">
-            <tr height="40" height="100" bgcolor="#ff5050">
+        <table border="7" width="600" bgcolor="#ff9999">
+            <tr height="40" height="100" bgcolor="#ff3333">
                 <td width="350" align="center"><b>Nome</b></td>
                 <td width="50" align="center"><b>Idade</b></td>
                 <td align="center"><b>Foto</b></td>
@@ -37,7 +37,7 @@
             <tr>
                 <td align="center">Lucas</td>
                 <td align="center">16</td>
-                <td><a href="https://github.com/LucasNetto1/Template/blob/main/sitecomfotohtml"><img src="Imagens/homens/eu.png" width="100%"></a></td>
+                <td><a href="https://github.com/LucasNetto1/Template/tree/main/Exercicio_tabela"><img src="Imagens/homens/eu.png" width="100%"></a></td>
 
                 <tr>
                     <td align="center">Carol</td>
